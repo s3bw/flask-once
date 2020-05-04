@@ -27,12 +27,9 @@ import flask_once
 from flask_once import idempotent
 
 
-class Cache(dict):
-    pass
-
-
 app = Flask(__name__)
-app.cache = Cache()
+#: cache supports dict interface
+app.cache = dict()
 
 flask_once.attach(app, app.cache)
 

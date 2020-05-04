@@ -26,6 +26,7 @@ setup(
     long_description_content_type="text/markdown",
     author="S. Williams-Wynn",
     author_email="s.williamswynn.mail@gmail.com",
+    py_modules=["flask_once"],
     packages=find_packages(),
     install_requires=about["__dependencies__"],
     python_requires=">=3.6",
